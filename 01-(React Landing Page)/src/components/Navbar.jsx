@@ -1,4 +1,5 @@
 import Navbtn from "./Navbtn";
+import logo from "../assets/Navbar-logo-img.png";
 
 const Navbar = () => {
   return (
@@ -9,9 +10,9 @@ const Navbar = () => {
           <Navbtn name={"Work"} />
           <Navbtn name={"About"} />
         </div>
-        <div className=" flex gap-10">
-          <Navbtn name={"Services"} />
-          <Navbtn name={"Services"} />
+        <div className=" flex items-center gap-2 ">
+          <img className=" h-8 w-8 bg-cover" src={logo}/>
+          <h3 className="font-bold text-xl">Astratto</h3>
         </div>
         <div className="flex gap-10">
           <Navbtn name={"Careers"} />
