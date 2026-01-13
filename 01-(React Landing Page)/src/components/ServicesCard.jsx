@@ -22,7 +22,7 @@ const ServicesCard = ({title}) => {
       </div>
 
       <div className="rounded-[2rem] overflow-hidden mt-8 border-2 border-[#8C00FF]">
-        <img src={FirstCard} alt="" />
+        <img className="bg-cover" src={FirstCard} alt="" />
       </div>
 
     </div>
