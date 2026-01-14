@@ -1,7 +1,12 @@
 import ServicesCard from "./ServicesCard";
+import Middlecard from "./Middlecard"
 import S1svg from "../assets/Servi-W1.png";
 import S2svg from "../assets/Servi-3.png";
 import ropesvg from "../assets/Services-rope.svg";
+
+import FirstC from "../assets/First-card.jpg"
+
+import ThirdC from "../assets/Third-card.jpg"
 
 import logo from "../assets/Navbar-logo-img.png";
 
@@ -22,9 +27,20 @@ const Services = () => {
         {/* Card Services Section */}
         <div className="Wrapper">
           <div className="w-full h-full p-4 flex justify-between">
-            <ServicesCard />
-            <ServicesCard />
-            <ServicesCard />
+            <ServicesCard 
+             img={FirstC}
+             tittle={'Motion Graphics'}
+             dec={'Bring your ideas to life through dynamic visuals and engaging animations'} 
+            />
+
+            <Middlecard />
+
+            <ServicesCard 
+             img={ThirdC}
+             tittle={'Motion Graphics'}
+             dec={'Bring your ideas to life through dynamic visuals and engaging animations'} 
+            /> 
+
           </div>
 
           <div className="px-5 flex justify-between">
